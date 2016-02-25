@@ -5,7 +5,7 @@
 Proof of Concept for Resume Analyzer</strong> 
 
 
-Our eesearch into the technology has led us from basic hadoop mapreduce programs in java to more sophisticated implementations
+Our research into the technology has led us from basic hadoop mapreduce programs in java to more sophisticated implementations
 of mapreduce such as MongoDB. It is one of the most popular NoSQL database available for storing unstructured data and is 
 powerful enough to implement mapreduce programs on its own. It stores unstructured data in JSON/BSON (format similar to JSON)
 and also provides the capability to query this data. The nature of our app which brings several applicants together with 
