@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign-Up/Login Form</title>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/static/normalize.css" >
+
+    
+        <link rel="stylesheet" href="/static/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="form">
+
+  <ul class="tab-group">
+    <li class="tab active"><a href="#signup">Seek Jobs</a></li>
+    <li class="tab"><a href="#login">Hire</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="signup">
+      <h1>Candidate Profile</h1>
+
+      <form name="resumeform" action="/" method="post">
+
+        <div class="top-row">
+          <div class="field-wrap">
+            <label>
+              First Name<span class="req">*</span>
+            </label>
+            <input type="text" name = "fname" required autocomplete="off" />
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Last Name<span class="req">*</span>
+            </label>
+            <input type="text" name="lname" required autocomplete="off" />
+          </div>
+        </div>
+
+        <div class="field-wrap">
+          <label>
+            Email Address<span class="req">*</span>
+          </label>
+          <input type="email" name="email" required autocomplete="off" />
+        </div>
+        <div class="field-wrap">
+          <label>
+            Company<span class="req">*</span>
+          </label>
+          <input type="text" name="company" required autocomplete="off" />
+        </div>
+        <div class="field-wrap">
+          <label>
+            Job Title<span class="req">*</span>
+          </label>
+          <input type="text" name="jobtitle" required autocomplete="off" />
+        </div>
+        <div class="field-wrap">
+          <label>
+            Enter Years of Experience<span class="req">*</span>
+          </label>
+          <textarea rows="1" name="yearsofexp"> </textarea>
+        </div>
+
+        <div class="field-wrap">
+          <label>Education Level </label>
+          <br>
+          <br>
+          <select name="edulevel" size="1">
+            <option>Diploma</option>
+            <option>Undergraduate</option>
+            <option selected="selected">Graduate</option>
+          </select>
+        </div>
+        <div class="field-wrap">
+          <label>
+            Technology Skills Programming (Separate multiple values using a comma)<span class="req">*</span>
+          </label>
+          <textarea rows="2" name="tskillsp"> </textarea>
+        </div>
+        <div class="field-wrap">
+          <label>
+            Tech Skills Tools
+          </label>
+          <textarea rows="2" name="tskillst"> </textarea>
+        </div>
+        <div class="field-wrap">
+          <label>
+            Work Experience
+          </label>
+          <textarea rows="6" name="workex"> </textarea>
+        </div>
+        <button type="submit" class="button button-block" name = "postresume" value="Submit Profile">Submit Profile</button>
+
+      </form>
+
+    </div>
+
+    <div id="login">
+      <h1>Hire portal</h1>
+
+      <form action="/" method="post">
+
+        <div class="field-wrap">
+          <label>
+            Education Level<span class="req">*</span>
+          </label>
+          <input type="text" name="reqedulevel" required autocomplete="off" />
+        </div>
+
+        <div class="field-wrap">
+          <label>
+            Tech Skills Programming<span class="req">*</span>
+          </label>
+          <textarea rows="1" name="reqtskillsp"> </textarea>
+        </div>
+
+        <div class="field-wrap">
+          <label>
+            Tech Skills Tools<span class="req">*</span>
+          </label>
+          <textarea rows="1" name="reqtskillst"> </textarea>
+        </div>
+
+        <div class="field-wrap">
+          <label>
+            Years of Experience<span class="req">*</span>
+          </label>
+          <textarea rows="1" name="reqyearsofexp"> </textarea>
+        </div>
+
+        <button class="button button-block"  name = "getcandidate" value="Job Description">Find Candidates</button>
+
+      </form>
+
+    </div>
+
+  </div>
+  <!-- tab-content -->
+
+</div>
+<!-- /form -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="/static/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

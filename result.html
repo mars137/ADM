@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="/static/normalize.css" >
+
+
+        <link rel="stylesheet" href="/static/style.css">
+
+  </head>
+
+
+
+<body>
+
+   <div id="signup">
+
+        <h3> {{  msg }} </h3>
+
+        <div class="top-row">
+          <div class="field-wrap">
+            <ul>
+              %for dataDoc in data:
+               <h3> FirstName: {{ dataDoc['FirstName'] }} </h3>
+               <h3> LastName: {{ dataDoc['LastName'] }}</h3>
+                <h3> Contact: {{ dataDoc['Email'] }}</h3>
+                <br>
+              %end
+            </ul>
+
+            </label>
+
+          </div>
+         </div>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="/static/index.js"></script>
+
+
+</body>
+</html>
